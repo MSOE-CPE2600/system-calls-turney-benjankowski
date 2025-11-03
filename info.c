@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
     // https://man7.org/linux/man-pages/man2/clock_gettime.2.html
     clock_gettime(CLOCK_REALTIME, &current_time);
     long long elapsed_time = (current_time.tv_sec * 1e9) + current_time.tv_nsec;
-    printf("Time in nanoseconds: %ld\n", elapsed_time);
+    printf("Time in nanoseconds: %lld\n", elapsed_time);
 
     char hostname[256];
     // https://man7.org/linux/man-pages/man2/gethostname.2.html
